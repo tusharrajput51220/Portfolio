@@ -51,8 +51,8 @@ function ContactMe({ }: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 mt-[150px]">
-        <h4 className="text-xl xl:text-4xl text-center font-semibold">
+      <div className="flex flex-col space-y-10 mt-[120px]">
+        <h4 className="text-sm xl:text-4xl text-center font-semibold">
           I have got just what you need.{" "}
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk.</span>
         </h4>
@@ -79,7 +79,7 @@ function ContactMe({ }: Props) {
             <input
               onChange={handleChange}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput w-[120px]"
               type="text"
               name="name"
             />
