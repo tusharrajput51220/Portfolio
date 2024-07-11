@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 function Skill({src,number}: Props) {
   return (
     <div className="group flex relative cursor-pointer">
-      <img
+      <Image
         src={src}
         alt=''
         className="rounded-full border border-gray-500 object-cover w-20 h-20 md:w-28 md:h-28 xl:w-[80px] xl:h-[80px] filter 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -11,7 +12,7 @@ function About({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      <img
+      <Image
         className="-mb-20 md:mb-0 flex-shrink-0 w-20 h-20 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 
         xl:w-[400px] xl:h-[400px] hidden md:inline-flex"
         src="/p3.jpg"
@@ -24,7 +25,7 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-sm xl:text-base"> 
-          I'm Tushar 💯, as a full stack developer, I excel in both front-end and back-end
+          Im Tushar 💯, as a full stack developer, I excel in both front-end and back-end
           technologies, adeptly handling the complete web development lifecycle.
           With a strong grasp of client-side and server-side programming, I
           created seamless, responsive, and functional web applications.🌟 My
