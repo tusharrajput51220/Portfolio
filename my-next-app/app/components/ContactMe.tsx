@@ -2,62 +2,31 @@
 
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
-
-// type Inputs = {
-//   name: string;
-//   email: string;
-//   subject: string;
-//   message: string;
-// };
 
 type Props = {};
 
-function ContactMe({}: Props) {
-  //   const { register, handleSubmit } = useForm<Inputs>();
-  //   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-  //     console.log(formData);
-  //   };
+function ContactMe({ }: Props) {
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e:
-      | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    let { name, value } = e.target;
-    if (name == "name") {
-      setUserData({
-        ...userData,
-        name: value,
-      });
-    }
-    if (name == "email") {
-      setUserData({
-        ...userData,
-        email: value,
-      });
-    }
-    if (name == "subject") {
-      setUserData({
-        ...userData,
-        subject: value,
-      });
-    }
-    if (name == "message") {
-      setUserData({
-        ...userData,
-        message: value,
-      });
-    }
+    const { name, value } = e.target;
+    setUserData((prevUserData) => ({
+      ...prevUserData,
+      [name]: value,
+    }));
   };
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
     const mailtoURL = `mailto:papareact.team@gmail.com?subject=${encodeURIComponent(
       userData.subject
     )}&body=Hi, my name is ${encodeURIComponent(
@@ -65,7 +34,12 @@ function ContactMe({}: Props) {
     )}. ${encodeURIComponent(userData.message)} (${encodeURIComponent(
       userData.email
     )})`;
+
     window.location.href = mailtoURL;
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Adjust this timeout duration as needed
   };
 
   return (
@@ -78,7 +52,7 @@ function ContactMe({}: Props) {
           I have got just what you need.{" "}
           <span className="underline decoration-[#F7AB0A]/50">Let's Talk.</span>
         </h4>
-        <div className="space-y-6">
+        <div className="space-y-2 relative bottom-[10px]">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+91&nbsp;9773675356</p>
@@ -94,21 +68,19 @@ function ContactMe({}: Props) {
         </div>
 
         <form
-          // onSubmit={handleSubmit}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          onSubmit={handleSubmit}
+          className="flex flex-col space-y-2 w-fit mx-auto relative bottom-[20px]"
         >
           <div className="flex space-x-2">
             <input
-              //   {...register("name")}
-              onChange={(e) => handleChange(e)}
+              onChange={handleChange}
               placeholder="Name"
               className="contactInput"
               type="text"
               name="name"
             />
             <input
-              //   {...register("email")}
-              onChange={(e) => handleChange(e)}
+              onChange={handleChange}
               placeholder="Email"
               className="contactInput"
               type="email"
@@ -117,8 +89,7 @@ function ContactMe({}: Props) {
           </div>
 
           <input
-            // {...register("subject")}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
             placeholder="Subject"
             className="contactInput"
             type="text"
@@ -126,8 +97,7 @@ function ContactMe({}: Props) {
           />
 
           <textarea
-            // {...register("message")}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
             placeholder="Message"
             className="contactInput"
             name="message"
@@ -135,15 +105,36 @@ function ContactMe({}: Props) {
 
           <button
             type="submit"
-            onClick={handleSubmit}
             className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            disabled={loading}
           >
-            Submit
+            {loading ? <LoadingIcon /> : "Submit"}
           </button>
         </form>
       </div>
     </div>
   );
 }
+
+const LoadingIcon = () => (
+  <svg
+    className="animate-spin h-5 w-5 mr-3"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      className="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      strokeWidth="4"
+    ></circle>
+    <path
+      className="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291l1.146-1.147a6 6 0 004.242 1.758A6 6 0 0013.5 14.5l-1.147 1.146A4.5 4.5 0 016 17.291z"
+    ></path>
+  </svg>
+);
 
 export default ContactMe;

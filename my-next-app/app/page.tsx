@@ -1,3 +1,4 @@
+import Link from "next/link";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
 import Experience from "./components/Experience";
@@ -5,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import { ArrowUpIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -31,6 +33,11 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+      <Link href="#hero">
+        <footer className="sticky bottom-5 max-w-fit cursor-pointer">
+          <ArrowUpIcon className="h-10 w-10 rounded-full bg-white text-[#F7AB0A] mr-5 filter grayscale hover:grayscale-0 cursor-pointer" />
+        </footer>
+      </Link>
     </main>
   );
 }
