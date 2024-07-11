@@ -31,7 +31,7 @@ function Project({ }: Props) {
          practical implementation.
          .' />
 
-      <Projects src="chatapp.png" heading='netflix clone' subject='Created a real-time chat application 
+      <Projects src="chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
       leveraging React for the user interface, Firebase and Firestore for real-time data synchronization,
        and Node.js for backend logic. This setup ensures instant messaging and seamless updates across
         all clients. React dynamic components provide a smooth user experience, while Firebase and 
