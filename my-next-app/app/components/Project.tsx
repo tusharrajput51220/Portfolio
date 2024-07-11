@@ -22,7 +22,7 @@ function Project({ }: Props) {
        architecture ensures a responsive and dynamic interface, while Node.js handles server-side 
        operations and API interactions efficiently. This clone showcases my skills in modern web
         development technologies and demonstrates my ability to replicate complex web services with
-         practical implementation.' projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master' 
+         practical implementation.' projectlink='https://github.com/tusharrajput51220/Google-clone/tree/master' 
          />
 
         <Projects src="chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
