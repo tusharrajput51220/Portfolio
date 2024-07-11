@@ -26,20 +26,24 @@ function ContactMe({ }: Props) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    const mailtoURL = `mailto:papareact.team@gmail.com?subject=${encodeURIComponent(
-      userData.subject
-    )}&body=Hi, my name is ${encodeURIComponent(
-      userData.name
-    )}. ${encodeURIComponent(userData.message)} (${encodeURIComponent(
-      userData.email
-    )})`;
 
-    window.location.href = mailtoURL;
+    if (!userData.subject || !userData.name || !userData.email) {
+      alert("Enter all details!!")
+    } else {
+      setLoading(true);
+      const mailtoURL = `mailto:papareact.team@gmail.com?subject=${encodeURIComponent(
+        userData.subject
+      )}&body=Hi, my name is ${encodeURIComponent(
+        userData.name
+      )}. ${encodeURIComponent(userData.message)} (${encodeURIComponent(
+        userData.email
+      )})`;
+      window.location.href = mailtoURL;
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    }
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000); // Adjust this timeout duration as needed
   };
 
   return (
@@ -105,7 +109,8 @@ function ContactMe({ }: Props) {
 
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg 
+            hover:bg-[#F7AB0A]/70 hover:text-black"
             disabled={loading}
           >
             {loading ? <LoadingIcon /> : "Submit"}
