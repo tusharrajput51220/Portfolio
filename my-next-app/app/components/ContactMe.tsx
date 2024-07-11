@@ -52,22 +52,22 @@ function ContactMe({ }: Props) {
         Contact
       </h3>
       <div className="flex flex-col space-y-10 mt-[150px]">
-        <h4 className="text-4xl text-center font-semibold">
+        <h4 className="text-xl xl:text-4xl text-center font-semibold">
           I have got just what you need.{" "}
           <span className="underline decoration-[#F7AB0A]/50">Let's Talk.</span>
         </h4>
         <div className="space-y-2 relative bottom-[10px]">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+91&nbsp;9773675356</p>
+            <PhoneIcon className="text-[#F7AB0A] w-4 h-4 xl:h-7 xl:w-7 animate-pulse" />
+            <p className="text-md xl:text-2xl">+91&nbsp;9773675356</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">tusharrajput51220@gmail.com</p>
+            <EnvelopeIcon className="text-[#F7AB0A] w-4 h-4 xl:h-7 xl:w-7 animate-pulse" />
+            <p className="text-md xl:text-2xl">tusharrajput51220@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">New Delhi</p>
+            <MapPinIcon className="text-[#F7AB0A] w-4 h-4 xl:h-7 xl:w-7 animate-pulse" />
+            <p className="text-md xl:text-2xl">New Delhi</p>
           </div>
         </div>
 

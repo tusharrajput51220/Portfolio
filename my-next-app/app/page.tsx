@@ -35,7 +35,8 @@ export default function Home() {
       </section>
       <Link href="#hero">
         <footer className="sticky bottom-5 max-w-fit cursor-pointer">
-          <ArrowUpIcon className="h-10 w-10 rounded-full bg-white text-[#F7AB0A] mr-5 filter grayscale hover:grayscale-0 cursor-pointer" />
+          <ArrowUpIcon className="w-6 h-6 xl:h-10 xl:w-10 rounded-full bg-white text-[#F7AB0A] mr-5 filter grayscale
+           hover:grayscale-0 cursor-pointer ml-[20px]" />
         </footer>
       </Link>
     </main>
