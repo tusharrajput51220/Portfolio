@@ -15,13 +15,6 @@ function Project({ }: Props) {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        <Projects src="n2.png" heading='netflix clone' subject='Developed a Netflix clone, a web
-       application mimicking the popular streaming platform. It features a sleek, user-friendly 
-       interface with categories, search functionality, and responsive design. Users can browse a 
-       curated collection of movies and TV shows, view details, and stream content seamlessly. The 
-       project leverages modern web technologies such as React for the frontend and a robust backend
-        to manage content and user data, ensuring a smooth and engaging viewing experience.'
-          projectlink='https://github.com/tusharrajput51220/Netflix-clone' />
 
         <Projects src="google.png" heading='Google realtime' subject='I developed a Google clone utilizing 
       React for the frontend and Node.js for the backend. The project integrates Google APIs to mimic 
@@ -29,15 +22,26 @@ function Project({ }: Props) {
        architecture ensures a responsive and dynamic interface, while Node.js handles server-side 
        operations and API interactions efficiently. This clone showcases my skills in modern web
         development technologies and demonstrates my ability to replicate complex web services with
-         practical implementation.' projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master' />
+         practical implementation.' projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master' 
+         />
 
-      <Projects src="chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
+        <Projects src="chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
       leveraging React for the user interface, Firebase and Firestore for real-time data synchronization,
        and Node.js for backend logic. This setup ensures instant messaging and seamless updates across
         all clients. React dynamic components provide a smooth user experience, while Firebase and 
         Firestore manage and sync chat data in real time. Node.js supports the application’s backend 
         processes, ensuring robust performance and scalability for the chat service.'
-          projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master' />
+          projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master'
+           />
+
+        <Projects src="n2.png" heading='netflix clone' subject='Developed a Netflix clone, a web
+       application mimicking the popular streaming platform. It features a sleek, user-friendly 
+       interface with categories, search functionality, and responsive design. Users can browse a 
+       curated collection of movies and TV shows, view details, and stream content seamlessly. The 
+       project leverages modern web technologies such as React for the frontend and a robust backend
+        to manage content and user data, ensuring a smooth and engaging viewing experience.'
+        
+          projectlink='https://github.com/tusharrajput51220/Netflix-clone' />
       </div>
 
 

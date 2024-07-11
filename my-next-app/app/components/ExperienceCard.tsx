@@ -14,9 +14,10 @@ type Props = {
   s1: string,
   s2: string,
   s3: string,
+  experience: string,
 };
 
-function ExperienceCard({ company, role, swork, ework, p1, p2, p3, p4, p5,p6, s1, s2, s3 }: Props) {
+function ExperienceCard({ company, role, swork, ework, p1, p2, p3, p4, p5, p6, s1, s2, s3, experience }: Props) {
   return (
     <article
       className="flex flex-col mt-10 rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]
@@ -35,8 +36,10 @@ function ExperienceCard({ company, role, swork, ework, p1, p2, p3, p4, p5,p6, s1
           <img className="h-10 w-10 rounded-full" src={p6} alt="" />
         </div>
         <p className="uppercase py-5 text-gray-300">
-          {swork}-{ework}
+          {swork}-{ework}&nbsp;&nbsp;{experience && <a className="underline decoration-[#F7AB0A]/50"
+            href={experience}>(Experience letter)</a>}
         </p>
+
         <ul className="list-disc space-y-4 ml-5 text-lg">
           <li>
             {s1}
