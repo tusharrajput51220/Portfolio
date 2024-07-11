@@ -79,7 +79,7 @@ function ContactMe({ }: Props) {
             <input
               onChange={handleChange}
               placeholder="Name"
-              className="contactInput w-[120px]"
+              className="contactInput xl:w-[200px] w-[85px]"
               type="text"
               name="name"
             />
