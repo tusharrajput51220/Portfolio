@@ -16,7 +16,7 @@ function Project({ }: Props) {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
 
-        <Projects src="google.png" heading='Google realtime' subject='I developed a Google clone utilizing 
+        <Projects src="/google.png" heading='Google realtime' subject='I developed a Google clone utilizing 
       React for the frontend and Node.js for the backend. The project integrates Google APIs to mimic 
       core functionalities, providing users with a familiar search experience. React component-based
        architecture ensures a responsive and dynamic interface, while Node.js handles server-side 
@@ -25,7 +25,7 @@ function Project({ }: Props) {
          practical implementation.' projectlink='https://github.com/tusharrajput51220/Google-clone/tree/master' 
          />
 
-        <Projects src="chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
+        <Projects src="/chatapp.png" heading='realtime chatapp' subject='Created a real-time chat application 
       leveraging React for the user interface, Firebase and Firestore for real-time data synchronization,
        and Node.js for backend logic. This setup ensures instant messaging and seamless updates across
         all clients. React dynamic components provide a smooth user experience, while Firebase and 
@@ -34,7 +34,7 @@ function Project({ }: Props) {
           projectlink='https://github.com/tusharrajput51220/Chat-app/tree/master'
            />
 
-        <Projects src="n2.png" heading='netflix clone' subject='Developed a Netflix clone, a web
+        <Projects src="/n2.png" heading='netflix clone' subject='Developed a Netflix clone, a web
        application mimicking the popular streaming platform. It features a sleek, user-friendly 
        interface with categories, search functionality, and responsive design. Users can browse a 
        curated collection of movies and TV shows, view details, and stream content seamlessly. The 

@@ -23,8 +23,10 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="/p1.jpg"
+        src="/p2.jpg"
         alt=""
+        width={128}
+        height={128} 
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[5px] xl:tracking-[15px]">

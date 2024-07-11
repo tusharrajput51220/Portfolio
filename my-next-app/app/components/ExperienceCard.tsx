@@ -29,12 +29,18 @@ function ExperienceCard({ company, role, swork, ework, p1, p2, p3, p4, p5, p6, s
         <h4 className="text-2xl xl:text-4xl relative left-[20px] xl:left-0 font-light">{company}</h4>
         <p className="font-bold text-2xl xl:text-4xl relative left-[20px] xl:left-0 mt-1">{role}</p>
         <div className="flex space-x-2 my-2 relative left-[20px] xl:left-0">
-          <Image className="h-10 w-10 rounded-full" src={p1} alt="" />
-          <Image className="h-10 w-10 rounded-full" src={p2} alt="" />
-          <Image className="h-10 w-10 rounded-full" src={p3} alt="" />
-          <Image className="h-10 w-10 rounded-full" src={p4} alt="" />
-          <Image className="h-10 w-10 rounded-full" src={p5} alt="" />
-          <Image className="h-10 w-10 rounded-full" src={p6} alt="" />
+          <Image className="h-10 w-10 rounded-full" src={p1} alt=""  width={128}
+        height={128}  />
+          <Image className="h-10 w-10 rounded-full" src={p2} alt=""  width={128}
+        height={128}  />
+          <Image className="h-10 w-10 rounded-full" src={p3} alt=""  width={128}
+        height={128}  />
+          <Image className="h-10 w-10 rounded-full" src={p4} alt=""  width={128}
+        height={128}  />
+          <Image className="h-10 w-10 rounded-full" src={p5} alt=""  width={128}
+        height={128}  />
+          <Image className="h-10 w-10 rounded-full" src={p6} alt=""  width={128}
+        height={128}  />
         </div>
         <p className="uppercase py-5 text-gray-300 relative left-[20px] xl:left-0">
           {swork}-{ework}{experience && <a className="underline decoration-[#F7AB0A]/50"

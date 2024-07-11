@@ -14,6 +14,8 @@ function Skill({src,number}: Props) {
         alt=''
         className="rounded-full border border-gray-500 object-cover w-20 h-20 md:w-28 md:h-28 xl:w-[80px] xl:h-[80px] filter 
         group-hover:grayscale transition duration-300 ease-in-out"
+        width={128}
+        height={128} 
       />
         {/* responsive correction */}
       <div

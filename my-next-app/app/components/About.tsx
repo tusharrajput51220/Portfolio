@@ -17,6 +17,8 @@ function About({}: Props) {
         xl:w-[400px] xl:h-[400px] hidden md:inline-flex"
         src="/p3.jpg"
         alt=""
+        width={128}
+        height={128} 
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-2xl xl:text-4xl font-semibold">
