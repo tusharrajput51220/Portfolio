@@ -31,7 +31,7 @@ function ContactMe({ }: Props) {
       alert("Enter all details!!")
     } else {
       setLoading(true);
-      const mailtoURL = `mailto:tusharrajput51220@gamil.com?subject=${encodeURIComponent(
+      const mailtoURL = `mailto:tusharrajput51220@gmail.com?subject=${encodeURIComponent(
         userData.subject
       )}&body=Hi, my name is ${encodeURIComponent(
         userData.name
