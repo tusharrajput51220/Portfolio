@@ -16,6 +16,14 @@ function Project({ }: Props) {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
 
+        <Projects src="/shop.png" heading='E-Commerce Shop' subject='Developed using Next.js, 
+        TypeScript, Tailwind CSS, and Wix CMS, ensuring a robust and scalable architecture.Integrated
+         Wix CMS for seamless content updates and management, enhancing the user experience and
+          reducing maintenance efforts.Utilized Tailwind CSS to create a fully responsive design,
+           ensuring optimal performance across all devices.Designed the application with 
+           scalability in mind, allowing for easy addition of new features and handling of increased traffic' 
+           projectlink='https://mycommerceshop.vercel.app/' 
+         />
         <Projects src="/google.png" heading='Google realtime' subject='I developed a Google clone utilizing 
       React for the frontend and Node.js for the backend. The project integrates Google APIs to mimic 
       core functionalities, providing users with a familiar search experience. React component-based

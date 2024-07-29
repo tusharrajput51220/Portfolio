@@ -18,7 +18,7 @@ function Experience({ }: Props) {
       >
         <ExperienceCard company='Saraf Fincom Pvt. Ltd.' role="FullStack Developer" swork='January 2024'
           ework='present' p1='/html.jpg' p2='/csss.jpg' p3='/jpt.jpg' p4='/reac.jpg' p5='/node.jpg' p6='/mysql.png'
-          s1='Worked on multiple applications with frontend in ReactJs, created components in React and Bootstrap.'
+          s1='Worked on multiple applications with frontend in ReactJs, created components in ReactJS, NextJS and tailwind.'
           s2="Created APIs, models, or tables in MySQL Workbench using Sequelize ORM library for 
         NodeJs, also created controllers" s3="Efficiently used NodeJs, ExpressJs, and
          multiple other packages and third-party libraries and middlewares"
@@ -27,9 +27,8 @@ function Experience({ }: Props) {
 
         <ExperienceCard company='NetCreative Mind Solutions' role="FullStack Developer" swork='February 2023'
           ework='December 2023' p1='/html.jpg' p2='/csss.jpg' p3='/jpt.jpg' p4='/reac.jpg' p5='/java.png' p6='/mongo.png'
-          s1='Worked on multiple applications with frontend in ReactJs, created components in React and Bootstrap.'
-          s2="Created APIs, models, or tables in MySQL Workbench using Sequelize ORM library for 
-        NodeJs, also created controllers" s3="Efficiently used NodeJs, ExpressJs, and
+          s1='Created and integrate applications with frontend in ReactJs, created components in React and Bootstrap.'
+          s2="Created APIs, models, or tables in MySQL Workbench using JAVA Spring , also created controllers" s3="Also worked using API with NodeJs, ExpressJs, and
          multiple other packages and third-party libraries and middlewares" experience='https://drive.google.com/file/d/1f5NckjWP6q40GH7a6j_uMA3yG23_JJQc/view'
         />
       </div>
